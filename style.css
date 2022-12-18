@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient(180deg, #10091d 0%, #28193d 100%);
+  color: white;
+  transition: all 0.3s;
+}
+
+.logo {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 180px;
+}
+
+.portrait {
+  filter: brightness(0.7) grayscale(1);
+}
+
+.background-gradient {
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 200px;
+  height: 100vh;
+}
+
+.title {
+  font-size: 105px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.thick {
+  font-weight: 500;
+}
+
+.dark-mode-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+}
+
+.dark-mode-night {
+  font-weight: 300;
+}
+
+.dark-mode-day {
+  font-weight: 300;
+  color: #ffffff4d;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Switch style */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #afd0f1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #46315c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #46315c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Switch style end */
+
+@media screen and (max-width: 1024px) {
+  .portrait {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .logo {
+    left: 60px;
+  }
+}
