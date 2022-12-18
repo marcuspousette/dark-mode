@@ -10,12 +10,9 @@ window.onload = () => {
   const headline = document.querySelector('#headline');
 
   function toggle(event) {
-    console.log(event.target.checked);
     if (event.target.checked) {
-      // Dark mode
       goDark();
     } else {
-      // Light mode
       goLight();
     }
   }
