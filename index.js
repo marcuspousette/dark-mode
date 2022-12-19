@@ -21,8 +21,8 @@ window.onload = () => {
     body.style.backgroundImage =
       'linear-gradient(180deg,#10091D 0%,#28193D 100%)';
     body.style.color = 'white';
-    gradient.src = '/images/dark-bg.png';
-    logo.src = '/images/logo-light.png';
+    gradient.setAttribute('src', '/images/dark-bg.png');
+    logo.setAttribute('src', '/images/logo-light.png');
     portrait.style.filter = 'brightness(0.7) grayscale(1)';
     textDay.style.color = '#ffffff4d';
     textNight.style.color = 'white';
@@ -33,8 +33,8 @@ window.onload = () => {
     body.style.backgroundImage =
       'linear-gradient(180deg,#E7F0F8 0%,#ffffff 100%)';
     body.style.color = '#262626';
-    gradient.src = '/images/light-bg.png';
-    logo.src = '/images/logo-dark.png';
+    gradient.setAttribute('src', '/images/light-bg.png');
+    logo.setAttribute('src', '/images/logo-dark.png');
     portrait.style.filter = 'unset';
     textDay.style.color = '#262626';
     textNight.style.color = '#2626268d';
